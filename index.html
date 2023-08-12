@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="tipping.css">
+
+        <h1>Tipping Amount</h1>
+    </head>
+
+    <body>
+        <form id="costForm">
+            <label>Cost: </label>
+            <input type="text" id="cost">
+        </form>
+
+        <button>10%</button>
+        <button>15%</button>
+        <button>20%</button>
+        <button>25%</button>
+
+        <br><br>
+        <form id="customForm">
+            <label>Custom Percentage: </label>
+            <input type="text" id="custom">
+        </form>
+
+        <button onclick="calculateAmounts()">Calculate</button>
+
+        <h2 id="tip">Tip Amount: </h2>
+        <h2 id="total">Total Amount (including tip): </h2>
+
+
+        <script type="text/javascript" src="tipping.js"></script>
+    </body>
+
+
+
+
+</html>
