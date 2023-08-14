@@ -9,35 +9,44 @@
     <body>
         <h1>Tipping Amount</h1>
 
-        <form id="costForm">
+        <form class="costForm">
             <label>Cost: </label>
             <input type="text" id="cost">
         </form>
 
         <br>
-        <button id="perButtons" onclick="buttonAmount(0.1)">10%</button>
-        <button id="perButtons" onclick="buttonAmount(0.15)">15%</button>
-        <button id="perButtons" onclick="buttonAmount(0.2)">20%</button>
-        <button id="perButtons" onclick="buttonAmount(0.25)">25%</button>
-
-        <br><br>
-        <form id="customForm">
-            <label>Custom Percentage: </label>
-            <input type="text" id="custom">
-        </form>
-
-        <br>
-        <form id="splitForm">
+        <form class="splitForm">
             <label>Number of People (not required): </label>
             <input type="text" id="split">
         </form>
 
-        <br><br>
-        <button onclick="calculateAmounts()">Calculate</button>
+        <br>
+        <div class="perButtons">
+            <button id="perButtons" onclick="buttonAmount(0.1)">10%</button>
+            <button id="perButtons" onclick="buttonAmount(0.15)">15%</button>
+            <button id="perButtons" onclick="buttonAmount(0.2)">20%</button>
+            <button id="perButtons" onclick="buttonAmount(0.25)">25%</button>
+        </div>
 
-        <h2 id="tip">Tip Amount: </h2>
-        <h2 id="total">Total Amount (including tip): </h2>
-        <h2 id="splitAmount">Splited Amount: </h2>
+
+        <br><br>
+        <form class="customForm">
+            <label>Custom Percentage (not required): </label>
+            <input type="text" id="custom">
+        </form>
+
+
+        <br><br>
+        <div class="calcButton">
+            <button id ="calcButton" onclick="calculateAmounts()">Calculate</button>
+        </div>
+
+
+        <div class="results">
+            <h2 id="tip">Tip Amount: </h2>
+            <h2 id="total">Total Amount (including tip): </h2>
+            <h2 id="splitAmount">Splited Amount: </h2>
+        </div>
 
 
         <script type="text/javascript" src="tipping.js"></script>
