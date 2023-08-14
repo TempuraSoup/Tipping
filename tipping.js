@@ -19,9 +19,9 @@ function calculateAmounts()
     }
     splitAmount = totalAmount/split;
 
-    document.getElementById("tip").textContent = "Tip Amount: " + customAmount;
-    document.getElementById('total').textContent = "Total Amount (including tip): " + totalAmount;
-    document.getElementById("splitAmount").textContent = "Splited Amount: " + splitAmount;
+    document.getElementById("tip").textContent = "Tip Amount: " + customAmount.toFixed(2);
+    document.getElementById('total').textContent = "Total Amount (including tip): " + totalAmount.toFixed(2);
+    document.getElementById("splitAmount").textContent = "Splited Amount: " + splitAmount.toFixed(2);
 }
 
 function buttonAmount(per)
@@ -41,8 +41,8 @@ function buttonAmount(per)
     totalAmount = cost+tipAmount;
     splitAmount = totalAmount/split;
 
-    document.getElementById("tip").textContent = "Tip Amount: " + tipAmount;
-    document.getElementById('total').textContent = "Total Amount (including tip): " + totalAmount;
-    document.getElementById("splitAmount").textContent = "Splited Amount: " + splitAmount;
+    document.getElementById("tip").textContent = "Tip Amount: " + tipAmount.toFixed(2);
+    document.getElementById('total').textContent = "Total Amount (including tip): " + totalAmount.toFixed(2);
+    document.getElementById("splitAmount").textContent = "Splited Amount: " + splitAmount.toFixed(2);
 
 }
